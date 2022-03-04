@@ -25,7 +25,6 @@ MongoClient.connect(
 				if (error) {
 					return console.log('unable to insert the user');
 				}
-
 				console.log(result.ops);
 			}
 		);
