@@ -14,5 +14,14 @@ MongoClient.connect(
 			return console.log('Unable to connect to database');
 		}
 		const db = client.db(databaseName);
+
+		db.collection('users')
+			.deleteMany({ age: 27 })
+			.then((result) => {
+				console.log('result', result);
+			})
+			.catch((err) => {
+				console.log('error', err);
+			});
 	}
 );
