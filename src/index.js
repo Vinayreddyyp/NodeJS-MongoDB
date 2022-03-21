@@ -41,17 +41,7 @@ app.get('/users/:id', async (req, res) => {
   } catch(e) {
 	 return res.status(500).send(e);
   }
-	// User.findById(_id)
-	// 	.then((user) => {
-	// 		if (!user) {
-	// 			return res.status(404).send();
-				
-	// 		}
-	// 		res.send(user);
-	// 	})
-	// 	.catch((err) => {
-	// 		res.status(500).send();
-	// 	});
+	
 });
 
 app.post('/tasks', (req, res) => {
